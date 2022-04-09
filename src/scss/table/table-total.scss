@@ -1,0 +1,44 @@
+$container-padding: 10px;
+.column-total {
+    display: flex;
+    flex-wrap: wrap;
+    // align-items: center;
+    margin-top: calc($container-padding * 2);
+    margin-bottom: calc($container-padding * 2);
+    text-align: center;
+    padding-left: calc($container-padding * 2);
+    &__container {
+        width: calc((100% - $container-padding * 10) / 6);
+        display: flex;
+        // flex-direction: column;
+        margin-right: $container-padding;
+        border: 1px solid white;
+        text-align: center;
+        align-items: center;
+        // padding: 3px;
+        height: 75px;
+        background-color: #fff;
+        color: black;
+        margin-bottom: 5px;
+        &:hover,
+        &:focus {
+            background-color: #8a8a8a;
+            color: white;
+        }
+    }
+    &__wrap {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+    }
+    &__key {
+        padding: 0;
+        // margin-right: 10px;
+    }
+    &__value {
+        font-weight: bold;
+        padding: 0;
+        margin-left: calc($container-padding * 2);
+        margin-right: calc($container-padding * 2);
+    }
+}

@@ -1,0 +1,81 @@
+@keyframes spinner-line-fade-more {
+    0%,
+    100% {
+        opacity: 0;
+        /* minimum opacity */
+    }
+    1% {
+        opacity: 1;
+    }
+}
+
+@keyframes spinner-line-fade-quick {
+    0%,
+    39%,
+    100% {
+        opacity: 0.25;
+        /* minimum opacity */
+    }
+    40% {
+        opacity: 1;
+    }
+}
+
+@keyframes spinner-line-fade-default {
+    0%,
+    100% {
+        opacity: 0.22;
+        /* minimum opacity */
+    }
+    1% {
+        opacity: 1;
+    }
+}
+
+@keyframes spinner-line-shrink {
+    0%,
+    25%,
+    100% {
+        /* minimum scale and opacity */
+        transform: scale(0.5);
+        opacity: 0.25;
+    }
+    26% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.waiting-module-window {
+    position: relative;
+    display: flex;
+    // left: 10vw;
+    // top: 10vw;
+    background-color: grey;
+    width: 250px;
+    opacity: 1;
+    margin: 0;
+    &.hidden {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        user-select: none;
+    }
+    &__text {
+        margin-left: 50px;
+    }
+    &__spin {
+        position: absolute;
+        right: 15%;
+        top: 50%;
+        transform: translate(0, -50%);
+        background-color: transparent;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+// .spinner {
+//     position: absolute;
+// }

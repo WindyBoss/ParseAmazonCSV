@@ -1,0 +1,23 @@
+.label {
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 15px;
+    margin-top: 10px;
+    width: 150px;
+    color: rgb(255, 255, 255, 0.61);
+    &-name {
+        margin-left: 8px;
+    }
+}
+
+.column-filter,
+.column-filter-two {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+
+.checkbox.ag-wrapper.ag-checkbox-input-wrapper {
+    margin: 0;
+}

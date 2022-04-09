@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.603968dc.css"><script src="https://unpkg.com/ag-grid-enterprise/dist/ag-grid-enterprise.min.noStyle.js" defer=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-balham-dark.css">
+    <style>
+
+    
+</style>
+</head>
+
+<body>
+    <button class="modal-window btn ag-theme-balham-dark" id="open-modal-btn" type="button">Send CSV</button>
+    <div class="modal-container" hidden="">
+        <div>
+            <select name="raport-type" id="raport-type" class="select-raport-type select ag-theme-balham-dark">
+                <option value="empty" class="raport-type-select-option select-option">Select Raport Type</option>
+                <option value="business-raport" class="raport-type-select-option select-option">Business Raport</option>
+                <option value="marketing-raport" class="raport-type-select-option select-option">Marketing Report</option>
+                <option value="manage-fba" class="raport-type-select-option select-option">Manage FBA</option>
+            </select>
+            <input type="file" class="file-input" id="dealCsv" accept=".csv">
+            <button class="file-btn btn ag-theme-balham-dark">Send a File</button>
+            <button class="file-btn-reset btn ag-theme-balham-dark">Reset Table</button>
+        </div>
+    </div>
+    <div class="waiting-module-window" data-loading="" hidden="">
+        <p class="waiting-module-window__text">Just a few second...</p>
+        <div class="waiting-module-window__spin"></div>
+    </div>
+    <div class="function-container">
+        <div class="btn-container ag-theme-balham-dark">
+            <button class="btn ag-theme-balham-dark" id="second-table-activate-btn">Add One More Table</button>
+            <div id="second-table-btn-container" hidden="">
+                <input type="file" class="file-input-two" id="dealCsv-two" accept=".csv">
+                <button class="file-btn-two btn ag-theme-balham-dark">Send a File</button>
+                <button class="file-btn-reset-two btn ag-theme-balham-dark">Reset Table</button>
+            </div>
+        </div>
+    </div>
+    <div class="waiting-module-window" data-loading="" hidden="">
+        <p class="waiting-module-window__text">Just a few second...</p>
+        <div class="waiting-module-window__spin"></div>
+    </div>
+    <div class="tables-container">
+        <div id="myGrid" class="ag-theme-balham-dark first-grid tables-container-style">
+            <div class="column-total"></div>
+            <div class="btn-container" id="selection-container-two">
+                <button class="btn" id="selection-delete">Delete Selected</button>
+                <button class="btn" id="selection-clear">Clear Selection</button>
+                <button class="file-btn-add-deleted-row">Add Deleted Row</button>
+                <input type="text" id="quickFilter" placeholder="Type filter...">
+                <div class="column-filter"></div>
+            </div>
+        </div>
+        <div id="myGrid-two" class="ag-theme-balham-dark second-grid grid-hidden tables-container-style">
+            <div class="column-total-two"></div>
+            <div class="btn-container" id="selection-container">
+                <button class="btn" id="selection-delete-two">Delete Selected</button>
+                <button class="btn" id="selection-clear-two">Clear Selection</button>
+                <button class="file-btn-add-deleted-row-two">Add Deleted Row</button>
+                <input type="text" id="quickFilter-two" placeholder="Type filter...">
+                <div class="column-filter-two"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/index.b1695411.js" defer=""></script>
+    <script src="/index.93f319fb.js" defer=""></script>
+    <script src="/index.5d427d07.js" defer=""></script>
+    <script src="/index.93f319fb.js" defer=""></script>
+    <script src="/index.93f319fb.js" defer=""></script>
+</body>
+
+</html>
